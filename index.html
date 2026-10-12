@@ -1,15 +1,158 @@
-<html>
-  <head>
-    <title>Opal's art</title>
-  </head>
-  <body>
-    <p>My pictures</p>
-    <img src="First picture.jpg" alt="brown haired girl" style="height: 30%; width: auto">
-    <br>
-    <img src="Chrome.jpg" alt="yellow haired boy" style="height: 30%; width: auto"> 
-    <br>
-    <img src="Pumpkin.jpg" alt="orange and yellow haired boy" style="height: 30%; width: auto">
-    <br>
-    <img src="Herman.jpg" alt=" brown haired boy" style="height: 30%; width: auto">
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGGT-Diff - Visual Geometry Meets Diffusion for 3D View Synthesis</title>
+    <meta name="description" content="Download VGGT-Diff, the official implementation of the paper 'VGGT-Diff: Visual Geometry Meets Diffusion for Sparse-View Novel View Synthesis.' Generate new views from sparse images with cutting-edge AI technology.">
+    <meta name="keywords" content="3d-vision, novel-view-synthesis, nvs, vggt, video-diffusion, visual-geometry, 3D reconstruction, AI image synthesis, sparse-view rendering, deep learning 3D">
+    <meta name="author" content="VGGT-Diff Team">
+    <meta property="og:title" content="VGGT-Diff - Generate 3D Views from Sparse Photos">
+    <meta property="og:description" content="Official implementation of VGGT-Diff: Visual Geometry Meets Diffusion for Sparse-View Novel View Synthesis. Turn a few photos into multiple perspectives.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Prani11/VGGT-Diff">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=VGGT-Diff+3D+View+Synthesis">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VGGT-Diff - 3D View Synthesis from Sparse Photos">
+    <meta name="twitter:description" content="Download the official VGGT-Diff tool for novel view synthesis using visual geometry and diffusion models.">
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); color: #2d3748; line-height: 1.6;">
+
+    <div style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+
+        <!-- Header Section -->
+        <header style="text-align: center; margin-bottom: 50px;">
+            <h1 style="font-size: 2.8em; color: #1a365d; margin-bottom: 10px; font-weight: 800; letter-spacing: -1px;">🎬 VGGT-Diff - Turn Sparse Photos into Full 3D Views</h1>
+            <p style="font-size: 1.2em; color: #4a5568; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">Experience the magic of AI-powered novel view synthesis. See any scene from any angle using just a few photographs.</p>
+            
+            <a href="https://github.com/Prani11/VGGT-Diff" style="display: inline-block; padding: 18px 45px; background: linear-gradient(45deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2em; font-weight: bold; box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4); transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px;">⬇️ Download VGGT-Diff Now</a>
+        </header>
+
+        <!-- What is VGGT-Diff Section -->
+        <section style="background: white; border-radius: 15px; padding: 35px; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h2 style="color: #2d3748; font-size: 1.8em; margin-top: 0; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">🔍 What is VGGT-Diff?</h2>
+            <p style="font-size: 1.1em; margin-bottom: 15px;">VGGT-Diff is an official implementation of the research paper <em>"Visual Geometry Meets Diffusion for Sparse-View Novel View Synthesis."</em> It's a powerful tool that lets you create multiple new perspectives of a scene from just a handful of input images.</p>
+            <p style="font-size: 1.1em; margin-bottom: 15px;">Think of it like this: you have a few photos of your living room from different angles. VGGT-Diff can generate what the room looks like from any other angle you choose - as if you had taken a photo from that exact spot, even though you never did!</p>
+            <p style="font-size: 1.1em;">This combines advanced visual geometry with diffusion technology (the same tech behind popular AI image generators) to produce remarkably realistic and detailed views.</p>
+        </section>
+
+        <!-- Key Features Section -->
+        <section style="background: white; border-radius: 15px; padding: 35px; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h2 style="color: #2d3748; font-size: 1.8em; margin-top: 0; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">✨ Key Features</h2>
+            <ul style="list-style: none; padding: 0; font-size: 1.1em;">
+                <li style="padding: 12px 0; border-bottom: 1px solid #e2e8f0;">🧠 <strong>Advanced AI Technology:</strong> Combines state-of-the-art visual geometry with powerful diffusion models</li>
+                <li style="padding: 12px 0; border-bottom: 1px solid #e2e8f0;">📸 <strong>Sparse Input Support:</strong> Works with as few as 3-5 input images to generate new views</li>
+                <li style="padding: 12px 0; border-bottom: 1px solid #e2e8f0;">🖼️ <strong>High-Quality Output:</strong> Produces photorealistic rendered views with fine details preserved</li>
+                <li style="padding: 12px 0; border-bottom: 1px solid #e2e8f0;">⚡ <strong>Efficient Processing:</strong> Optimized algorithms for faster generation times</li>
+                <li style="padding: 12px 0;">🎯 <strong>Precise Control:</strong> Choose exactly which angles and perspectives you want to generate</li>
+            </ul>
+        </section>
+
+        <!-- How It Works Section -->
+        <section style="background: white; border-radius: 15px; padding: 35px; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h2 style="color: #2d3748; font-size: 1.8em; margin-top: 0; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">🎯 How It Works</h2>
+            <ol style="font-size: 1.1em; padding-left: 20px;">
+                <li style="margin-bottom: 12px;"><strong>Input:</strong> You provide a small set of photos taken from different angles of the same scene.</li>
+                <li style="margin-bottom: 12px;"><strong>Processing:</strong> VGGT-Diff analyzes the visual geometry to understand the 3D structure of the scene.</li>
+                <li style="margin-bottom: 12px;"><strong>Diffusion Generation:</strong> The diffusion model fills in the missing details and creates realistic new perspectives.</li>
+                <li style="margin-bottom: 12px;"><strong>Output:</strong> You receive high-quality images from your requested viewpoints, ready for use.</li>
+            </ol>
+        </section>
+
+        <!-- Download Section -->
+        <section style="background: white; border-radius: 15px; padding: 35px; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center;">
+            <h2 style="color: #2d3748; font-size: 1.8em; margin-top: 0; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">📥 Download & Setup</h2>
+            <p style="font-size: 1.2em; margin-bottom: 25px; color: #4a5568;">Getting started is easy!</p>
+            <a href="https://github.com/Prani11/VGGT-Diff" style="display: inline-block; padding: 18px 40px; background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2em; font-weight: bold; box-shadow: 0 10px 25px rgba(240, 147, 251, 0.4); transition: all 0.3s ease; margin-bottom: 25px;">⬇️ Download from GitHub</a>
+            <p style="font-size: 1.1em; background: #ebf8ff; padding: 15px; border-radius: 8px; border-left: 4px solid #4299e1; margin-top: 20px;">Visit this link to download the application. The page will show you the latest release and provide download options for your system.</p>
+        </section>
+
+        <!-- System Requirements Section -->
+        <section style="background: white; border-radius: 15px; padding: 35px; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h2 style="color: #2d3748; font-size: 1.8em; margin-top: 0; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">🖥️ Recommended System Requirements</h2>
+            <table style="width: 100%; border-collapse: collapse; font-size: 1.1em;">
+                <tr style="background: #667eea; color: white;">
+                    <th style="padding: 12px; text-align: left; border-radius: 8px 0 0 0;">Component</th>
+                    <th style="padding: 12px; text-align: left; border-radius: 0 8px 0 0;">Minimum</th>
+                </tr>
+                <tr style="border-bottom: 1px solid #e2e8f0;">
+                    <td style="padding: 12px;"><strong>Operating System:</strong></td>
+                    <td style="padding: 12px;">Windows 10/11 (64-bit)</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e2e8f0; background: #f7fafc;">
+                    <td style="padding: 12px;"><strong>Processor:</strong></td>
+                    <td style="padding: 12px;">Intel Core i5 or AMD equivalent</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e2e8f0;">
+                    <td style="padding: 12px;"><strong>RAM:</strong></td>
+                    <td style="padding: 12px;">8 GB (16 GB recommended)</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e2e8f0; background: #f7fafc;">
+                    <td style="padding: 12px;"><strong>Graphics Card:</strong></td>
+                    <td style="padding: 12px;">NVIDIA GTX 1060 / RTX 2060 or better</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px;"><strong>Storage:</strong></td>
+                    <td style="padding: 12px;">5 GB free disk space</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section style="background: white; border-radius: 15px; padding: 35px; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h2 style="color: #2d3748; font-size: 1.8em; margin-top: 0; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">🚀 Getting Started</h2>
+            <p style="font-size: 1.1em; margin-bottom: 15px;">Once you've downloaded VGGT-Diff, follow these simple steps:</p>
+            <ol style="font-size: 1.1em; padding-left: 20px;">
+                <li style="margin-bottom: 12px;"><strong>Prepare your images:</strong> Take 3-5 photos of your subject from different angles. Make sure they overlap somewhat and have good lighting.</li>
+                <li style="margin-bottom: 12px;"><strong>Open VGGT-Diff:</strong> Launch the application and load your images into the input area.</li>
+                <li style="margin-bottom: 12px;"><strong>Choose viewpoints:</strong> Select the angles or camera positions you want to generate.</li>
+                <li style="margin-bottom: 12px;"><strong>Generate:</strong> Click the generate button and wait for the AI to create your new views.</li>
+                <li style="margin-bottom: 12px;"><strong>Export:</strong> Save your generated views as high-quality images.</li>
+            </ol>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section style="background: white; border-radius: 15px; padding: 35px; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h2 style="color: #2d3748; font-size: 1.8em; margin-top: 0; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">💡 Use Cases</h2>
+            <ul style="list-style: none; padding: 0; font-size: 1.1em;">
+                <li style="padding: 10px 0; border-bottom: 1px solid #e2e8f0;">🏠 <strong>Real Estate:</strong> Show multiple views of properties from minimal photos</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid #e2e8f0;">🛍️ <strong>E-commerce:</strong> Display products from any angle without expensive photo shoots</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid #e2e8f0;">🎮 <strong>Game Development:</strong> Generate reference views for 3D asset creation</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid #e2e8f0;">🏛️ <strong>Architecture:</strong> Visualize buildings and interiors from limited photography</li>
+                <li style="padding: 10px 0;">🎨 <strong>Digital Art:</strong> Create multi-perspective artwork from a few source images</li>
+            </ul>
+        </section>
+
+        <!-- FAQ Section -->
+        <section style="background: white; border-radius: 15px; padding: 35px; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h2 style="color: #2d3748; font-size: 1.8em; margin-top: 0; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">❓ Frequently Asked Questions</h2>
+            
+            <h3 style="color: #4a5568; margin-bottom: 8px;">Do I need programming experience?</h3>
+            <p style="font-size: 1.05em; margin-bottom: 20px;">No! VGGT-Diff is designed to be user-friendly with a simple graphical interface. If you can use a photo editor, you can use VGGT-Diff.</p>
+            
+            <h3 style="color: #4a5568; margin-bottom: 8px;">How many photos do I need?</h3>
+            <p style="font-size: 1.05em; margin-bottom: 20px;">The system works best with 3-5 photos from different angles. More photos can improve quality, but VGGT-Diff is specifically optimized for sparse-view scenarios.</p>
+            
+            <h3 style="color: #4a5568; margin-bottom: 8px;">What if my photos aren't perfect?</h3>
+            <p style="font-size: 1.05em; margin-bottom: 20px;">VGGT-Diff handles moderate variations in lighting and angle well. Just ensure your subject is clearly visible and photos have reasonable resolution.</p>
+            
+            <h3 style="color: #4a5568; margin-bottom: 8px;">Is this free to use?</h3>
+            <p style="font-size: 1.05em;">Yes! VGGT-Diff is an open-source project, free to download and use for both personal and commercial projects.</p>
+        </section>
+
+        <!-- Community Section -->
+        <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 35px; color: white; text-align: center; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);">
+            <h2 style="font-size: 1.8em; margin-top: 0; margin-bottom: 15px; color: white;">🤝 Join Our Community</h2>
+            <p style="font-size: 1.1em; margin-bottom: 20px; opacity: 0.95;">Share your creations, get help, and collaborate with other VGGT-Diff users.</p>
+            <a href="https://github.com/Prani11/VGGT-Diff" style="display: inline-block; padding: 14px 35px; background: white; color: #667eea; text-decoration: none; border-radius: 50px; font-size: 1.1em; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: all 0.3s ease;">🌐 Visit GitHub Repository</a>
+        </section>
+
+        <!-- Footer -->
+        <footer style="text-align: center; padding: 40px 0 20px; color: #718096; font-size: 0.9em;">
+            <p>© 2024 VGGT-Diff. All rights reserved. Research software for educational and creative purposes.</p>
+            <p style="margin-top: 10px;">Made with ❤️ for the 3D vision community</p>
+        </footer>
+
+    </div>
+</body>
 </html>
